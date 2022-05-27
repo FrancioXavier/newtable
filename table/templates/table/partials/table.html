@@ -1,0 +1,10 @@
+<table>
+    {% for cliente in clientes %}
+        <tr>
+            <td>{{cliente.nome}}</td>
+            <td>{{cliente.farinha_ou_insumo}}</td>
+            <td>{{cliente.preco}}R$</td>
+            <td>{{cliente.data}}</td>
+        </tr>
+    {% endfor %}
+</table>
