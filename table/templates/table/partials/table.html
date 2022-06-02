@@ -1,10 +1,12 @@
 <table>
     {% for cliente in clientes %}
         <tr>
-            <td>{{cliente.nome}}</td>
-            <td>{{cliente.farinha_ou_insumo}}</td>
-            <td>{{cliente.preco}}R$</td>
-            <td>{{cliente.data}}</td>
+            <td class='cliente-dados'>{{cliente.nome}}</td>
+            <td class='cliente-dados'>{{cliente.farinha_ou_insumo}}</td>
+            <td class='cliente-dados'>{{cliente.preco}}R$</td>
+            <td class='cliente-dados'>{{cliente.data}}</td>
+            <td>
+                <a href="{% url 'table:cliente' cliente.id %}" class="btn-zoom" title="Saiba mais"><i class="icon icon-cube"></i> Saiba mais</a>
         </tr>
     {% endfor %}
 </table>

@@ -1,0 +1,9 @@
+{% extends 'global/base.html' %}
+
+{% block title %} {{cliente.nome}} |{% endblock title %}
+
+{% block content %}
+<div class="main-content main-content-detail container">
+    {% include 'table/partials/cliente_data.html' %}
+</div>
+{% endblock content %}
